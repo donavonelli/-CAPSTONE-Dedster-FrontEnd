@@ -1,0 +1,28 @@
+h4{
+    display: inline-block;
+    margin-right: 5em;
+}
+
+h6{
+    display: inline-block;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.change_college{
+    margin-right: 5em;
+    max-width: 20%;
+}
+
+.userbar{
+    display: flex;
+    justify-content: center;
+}
+
+.signup, .login{
+    margin-right: 0em;
+}
+
+h4, h6, .signup, .login {
+    color: #F58023
+}
