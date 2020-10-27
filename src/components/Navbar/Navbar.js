@@ -7,7 +7,6 @@ const Navbar = function () {
 
     return (
         <div>
-        <h4>Logo</h4>
         <nav className="navbar">
             <h5>Home</h5>
             <h5>Services</h5>
