@@ -1,10 +1,21 @@
 import React from "react";
 
+import './Header.css'
+
 const Header = function () {
 
 
     return (
-        <h4>Header</h4>
+        <div>
+        <h4>Logo</h4>
+        <nav className="navbar">
+            <h5>Home</h5>
+            <h5>Services</h5>
+            <h5>Profile</h5>
+            <h5>About</h5>
+            <h5>Contact</h5>
+        </nav>
+        </div>
     )
 }
 
