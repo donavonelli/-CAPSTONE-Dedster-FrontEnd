@@ -1,0 +1,9 @@
+h5{
+    display: inline-block;
+    margin-right: 7em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}

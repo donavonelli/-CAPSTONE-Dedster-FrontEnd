@@ -1,9 +1,6 @@
-h5{
-    display: inline-block;
-    margin-right: 7em;
-}
-
-.navbar{
-    display: flex;
-    justify-content: center;
-}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

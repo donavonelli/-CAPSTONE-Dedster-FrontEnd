@@ -1,20 +1,14 @@
 import React from "react";
 
 import './Header.css'
+import logo from '../../assets/images/Dedster-02.png'
 
 const Header = function () {
 
 
     return (
         <div>
-        <h4>Logo</h4>
-        <nav className="navbar">
-            <h5>Home</h5>
-            <h5>Services</h5>
-            <h5>Profile</h5>
-            <h5>About</h5>
-            <h5>Contact</h5>
-        </nav>
+        <img src={logo} alt="Logo" />
         </div>
     )
 }
