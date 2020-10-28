@@ -2,8 +2,7 @@ import React from 'react';
 import Home from './pages/Home'
 import {useState, useEffect} from 'react'
 import './App.css';
-
-// import Routes from './config/Routes';
+import Routes from './config/Routes';
 
 function App() {
   const [colleges, setColleges]= useState([])
@@ -19,11 +18,11 @@ function App() {
   return (
     <div className="App">
 
-      {colleges.map((college)=> (
+      {/* {colleges.map((college)=> (
         <h4 key={college.id}>{college.name}</h4>
-      ))}
-      <Home />
-      {/* <Routes /> */}
+      ))} */}
+      {/* <Home /> */}
+      <Routes />
     </div>
   );
 }
