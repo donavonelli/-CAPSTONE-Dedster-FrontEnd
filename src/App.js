@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import {useState, useEffect} from 'react'
 import './App.css';
