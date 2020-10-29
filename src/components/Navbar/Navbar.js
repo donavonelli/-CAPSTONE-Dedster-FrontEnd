@@ -10,9 +10,9 @@ const Navbar = function () {
         <nav className="navbar">
             <h5><NavLink to='/'>Home</NavLink></h5>
             <h5><NavLink to='/services'>Services</NavLink></h5>
-            <h5>Profile</h5>
+            <h5><NavLink to='/profile'>Profile</NavLink></h5>
             <h5><NavLink to='/about'>About</NavLink></h5>
-            <h5>Contact</h5>
+            <h5><NavLink to='/contact'>Contact</NavLink></h5>
         </nav>
         </div>
     )
