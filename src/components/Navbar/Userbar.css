@@ -20,9 +20,14 @@ h6{
     justify-content: center;
 }
 
-.signup, .login{
-    margin-right: 0em;
+.signup, .login, #slash{
+    margin-right: 1em;
+    text-decoration: none;
 }
+
+.signup:hover, .login:hover{
+    color: black;
+} 
 
 h4, h6, .signup, .login {
     color: #F58023

@@ -1,6 +1,21 @@
-h5{
+.navbar{
     display: inline-block;
     margin-right: 7em;
+    font-family: 'Anton', sans-serif;
+}
+
+h3{
+    margin-right: 7em;
+    text-decoration: none;
+}
+
+.navbarlink{
+    text-decoration: none;
+    color: black;
+}
+
+.navbarlink:hover{
+    color:#F58023
 }
 
 .navbar{

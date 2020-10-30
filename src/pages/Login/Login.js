@@ -5,18 +5,18 @@ import Userbar from '../../components/Navbar/Userbar'
 import Footer from '../../components/Footer/Footer'
 
 
-class Contact extends Component {
+class Login extends Component {
     render () {
         return (
             <div>
                 <Header /> 
                 <Navbar />
-                <h3>Contact Page</h3>
-                <p>Email: official.dedster@gmail.com</p>
+                <h3>Login Page</h3>
+                <p>Content</p>
                 <Footer />
             </div>
         )
     }
 }
 
-export default Contact;
+export default Login;

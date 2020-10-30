@@ -5,14 +5,13 @@ import Userbar from '../../components/Navbar/Userbar'
 import Footer from '../../components/Footer/Footer'
 
 
-class Services extends Component {
+class Signup extends Component {
     render () {
         return (
             <div>
                 <Header /> 
-                <Userbar />
                 <Navbar />
-                <h3>Services Page</h3>
+                <h3>Signup Page</h3>
                 <p>Content</p>
                 <Footer />
             </div>
@@ -20,4 +19,4 @@ class Services extends Component {
     }
 }
 
-export default Services;
+export default Signup;
