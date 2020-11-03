@@ -1,22 +1,49 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Header from '../../components/Header/Header'
 import Navbar from '../../components/Navbar/Navbar'
 import Userbar from '../../components/Navbar/Userbar'
 import Footer from '../../components/Footer/Footer'
 
 
-class Login extends Component {
-    render () {
-        return (
-            <div>
-                <Header /> 
-                <Navbar />
-                <h3>Login Page</h3>
-                <p>Content</p>
-                <Footer />
-            </div>
-        )
+function Login(props) {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+  
+    function handleSubmit(event) {
+      event.preventDefault();
     }
-}
+  
+    return (
+      <div>
+        <Header /> 
+        <Navbar />
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div className='form-input'>
+            <label htmlFor='email'>Email</label>
+            <input
+              type='text'
+              name='email'
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </div>
+          <div className='form-input'>
+            <label htmlFor='password'>Password</label>
+            <input
+              type='password'
+              name='password'
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+            />
+          </div>
+  
+          <input type='submit' value='Login' />
+        </form>
+        <Footer />
+      </div>
+    );
+  }
+
 
 export default Login;

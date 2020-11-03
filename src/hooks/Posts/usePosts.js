@@ -1,31 +1,33 @@
-// import { useState, useEffect } from "react";
-// import ServiceModel from '../../models/ServiceModel'
-// import PostModel from '../../models/PostModel'
+import { useState, useEffect } from "react";
+import PostModel from '../../models/PostModel'
 
-// function usePosts(serviceId, postId) {
-//     const [services, setServices] = useState([]);
+function usePosts(serviceId, postId) {
+    const [posts, setPosts] = useState([]);
 
-//     function fetchPosts(id) {
-//         if (id) {
-//             PostModel.show(id).then((data)=> {
-//                 setServices(data.service_post_data);
-//             });
-//         } else {
-//             PostModel.all(serviceId).then((data) => {
-//                 setServices(data.services_data);
-//             });
-//         }
-//     }
+    function fetchPosts(s_id, p_id) {
+        if (p_id) {
+            PostModel.show(p_id).then((data)=> {
+                setPosts(data.post_data);
+                console.log("ID works")
+            });
+        } else {
+            PostModel.all(s_id).then((data) => {
+                console.log(data)
+                setPosts(data.service_posts_data);
+                console.log("All Posts")
+            });
+        }
+    }
 
-//     useEffect(
-//         function () {
-//             fetchServices(serviceId,);
-//         },[serviceId]
-//     );
-//         console.log(services)
+    useEffect(
+        function () {
+            fetchPosts(serviceId, postId);
+        },[serviceId]
+    );
+        // console.log(posts)
 
 
-//     return [services, fetchServices]
-// }
+    return [posts, fetchPosts]
+}
 
-// export default useServices
+export default usePosts

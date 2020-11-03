@@ -12,6 +12,9 @@ import Signup from '../pages/Signup/Signup'
 import Login from '../pages/Login/Login'
 import CollegesPage from '../pages/Colleges/Colleges'
 import CollegeShow from '../pages/Colleges/ShowPage'
+import PostsPage from '../pages/Posts/PostsPage'
+import PostShow from '../pages/Posts/ShowPage'
+
 
 const Routes = function (props) {
   return (
@@ -19,13 +22,16 @@ const Routes = function (props) {
     <Route exact path='/' component={ Home } />
     <Route exact path='/about' component={ About } />
     <Route exact path='/services' component={ ServicesPage } />
-    <Route path='/services/:id' component={ServiceShow} />
+    <Route exact path='/services/:id' component={ServiceShow} />
     <Route exact path='/colleges' component={ CollegesPage } />
-    <Route path='/colleges/:id' component={CollegeShow} />
+    <Route exact path='/colleges/:id' component={CollegeShow} />
+    <Route exact path='/services/:id/posts' component={PostsPage} />
+    <Route exact path='/services/:id/posts/:p_id' component={PostShow} />
     <Route exact path='/profile' component={ Profile } />
     <Route exact path='/contact' component={ Contact } />
     <Route exact path='/signup' component={ Signup } />
     <Route exact path='/login' component={ Login } />
+    <Route path='*' render={() => <h1>"Uh oh the page you are looking for doesn't exist O.O"</h1>} />
     </Switch>
   )
 }

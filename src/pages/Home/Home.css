@@ -1,4 +1,11 @@
 .header{
     /* font-family: 'Staatliches', cursive; */
     font-family: 'Merriweather Sans', sans-serif;
+    font-size: 60px;
+    color:#F58023
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
 }

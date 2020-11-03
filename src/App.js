@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import Navbar from './components/Navbar/Navbar'
-import LoginForm from './components/LoginForm/LoginForm'
-import SignupForm from './components/SignupForm/SignupForm'
 import {useState, useEffect} from 'react'
 import './App.css';
 import Routes from './config/Routes';
 import { render } from '@testing-library/react';
+import Test from "./components/Test";
 
 class App extends Component {
   // const [colleges, setColleges]= useState([])
@@ -25,6 +23,7 @@ class App extends Component {
           return (
             <div className="App">
         <Routes />
+        {/* <Test /> */}
       </div>
     )
   }

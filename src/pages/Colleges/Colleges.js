@@ -10,7 +10,6 @@ import useColleges from '../../hooks/Colleges/useColleges';
 
 function CollegesPage(props) {
     const [colleges, fetchColleges] = useColleges();
-
     return (
             <div>
                 <Header /> 

@@ -21,7 +21,6 @@ function useServices(serviceId) {
             fetchServices(serviceId);
         },[serviceId]
     );
-        console.log(services)
 
 
     return [services, fetchServices]
