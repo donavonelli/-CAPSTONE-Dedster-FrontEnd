@@ -31,14 +31,14 @@ const Routes = function (props) {
     <Route exact path='/colleges' component={ CollegesPage } />
     <Route exact path='/colleges/:id' component={CollegeShow} />
     <Route exact path='/posts' component={PostsPage} />
+    <Route exact path='/posts/new' component={NewPost} />
     <Route exact path='/posts/:p_id' component={PostShow} />
     <Route exact path='/profile' component={ Profile } />
     <Route exact path='/contact' component={ Contact } />
     <Route exact path='/signup' component={ Signup } />
     <Route exact path='/login' component={ Login } />
-    {loggedIn && (
-      <Route path='/posts/new' component={NewPost} />
-    )}
+    {/* {loggedIn && (
+    )} */}
     <Route path='*' render={() => <h1>"Uh oh the page you are looking for doesn't exist O.O"</h1>} />
     </Switch>
   )
