@@ -7,11 +7,11 @@ function useServices(serviceId) {
     function fetchServices(id) {
         if (id) {
             ServiceModel.show(id).then((data)=> {
-                setServices(data.service_data);
+                setServices(data.service);
             });
         } else {
             ServiceModel.all().then((data) => {
-                setServices(data.services_data);
+                setServices(data.services);
             });
         }
     }
