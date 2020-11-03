@@ -1,12 +1,35 @@
-const URL = 'http://localhost:8000/services'
+const URL = 'http://localhost:3001/posts'
 
 class PostModel {
-    static all = (serviceId) => {
-        return fetch(`${URL}/${serviceId}/posts`).then(response => response.json());
+    static all = () => {
+        return fetch(`${URL}`).then(response => response.json());
     }
-    static show = (serviceId, postId) => {
-        return fetch(`${URL}/${serviceId}/posts/${postId}`).then(response => response.json());
+    static show = (postId) => {
+        return fetch(`${URL}/${postId}`).then(response => response.json());
+    }
+
+    static create = (postData) => {
+        return fetch(URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(postData)
+        })
+        .then(response => response.json());
+    }
+
+    static edit = (postId, postData) => {
+        return fetch(`${URL}/${postId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(postData)
+        })
+        .then(response => response.json());
     }
 }
+
 
 export default PostModel
