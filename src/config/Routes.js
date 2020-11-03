@@ -32,7 +32,7 @@ const Routes = function (props) {
     <Route exact path='/colleges/:id' component={CollegeShow} />
     <Route exact path='/posts' component={PostsPage} />
     <Route exact path='/posts/new' component={NewPost} />
-    <Route exact path='/posts/:p_id' component={PostShow} />
+    <Route exact path='/posts/:id' component={PostShow} />
     <Route exact path='/profile' component={ Profile } />
     <Route exact path='/contact' component={ Contact } />
     <Route exact path='/signup' component={ Signup } />
