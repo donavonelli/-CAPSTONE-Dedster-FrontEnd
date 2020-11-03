@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
 import PostModel from '../../models/PostModel'
 
-function usePosts(serviceId, postId) {
+function usePosts(postId) {
     const [posts, setPosts] = useState([]);
 
-    function fetchPosts(s_id, p_id) {
+    function fetchPosts(p_id) {
         if (p_id) {
             PostModel.show(p_id).then((data)=> {
-                setPosts(data.post_data);
+                setPosts(data.Post);
                 console.log("ID works")
             });
         } else {
-            PostModel.all(s_id).then((data) => {
-                console.log(data)
-                setPosts(data.service_posts_data);
+            PostModel.all().then((data) => {
+                setPosts(data.Posts);
                 console.log("All Posts")
             });
         }
@@ -21,10 +20,9 @@ function usePosts(serviceId, postId) {
 
     useEffect(
         function () {
-            fetchPosts(serviceId, postId);
-        },[serviceId]
+            fetchPosts(postId);
+        },[postId]
     );
-        // console.log(posts)
 
 
     return [posts, fetchPosts]
