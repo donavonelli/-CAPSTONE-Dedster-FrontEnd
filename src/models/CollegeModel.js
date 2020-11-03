@@ -1,4 +1,4 @@
-const URL = 'http://localhost:8000/colleges'
+const URL = 'http://localhost:3001/colleges'
 
 class CollegeModel {
     static all = () => {

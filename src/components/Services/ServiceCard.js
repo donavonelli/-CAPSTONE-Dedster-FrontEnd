@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ServiceCard = (props) => {
-    const { name, description, img, id } = props.service;
+    const { name, description, img, _id } = props.service;
     return (
         <>
-            <Link to={`/services/${id}`}>
+            <Link to={`/services/${_id}`}>
                 <div className='service-card'>
                     <div className='image-wrapper'>
                         <img src={img} alt={name} />

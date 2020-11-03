@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CollegeCard = (props) => {
-    const { name, mascot, description, id } = props.college;
+    const { name, mascot, description, _id } = props.college;
     return (
         <>
-            <Link to={`/colleges/${id}`}>
+            <Link to={`/colleges/${_id}`}>
                 <div className='college-card'>
                     <div className='image-wrapper'>
                         <img src='replaceme' alt={name} />

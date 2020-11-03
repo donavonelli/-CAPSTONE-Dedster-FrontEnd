@@ -1,4 +1,4 @@
-const URL = 'http://localhost:8000/services'
+const URL = 'http://localhost:3001/services'
 
 class ServiceModel {
     static all = () => {

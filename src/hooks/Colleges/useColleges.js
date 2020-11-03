@@ -7,11 +7,11 @@ function useColleges(collegeId) {
     function fetchColleges(id) {
         if (id) {
             CollegeModel.show(id).then((data)=> {
-                setColleges(data.college_data);
+                setColleges(data.college);
             });
         } else {
             CollegeModel.all().then((data) => {
-                setColleges(data.colleges_data);
+                setColleges(data.colleges);
             });
         }
     }
@@ -21,9 +21,6 @@ function useColleges(collegeId) {
             fetchColleges(collegeId);
         },[collegeId]
     );
-        // console.log(colleges)
-
-        console.log(colleges)
     return [colleges, fetchColleges]
 }
 
