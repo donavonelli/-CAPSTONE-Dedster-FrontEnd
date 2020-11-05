@@ -1,10 +1,12 @@
 .navbar{
-    display: inline-block;
+    /* display: inline-block; */
     font-family: 'Anton', sans-serif;
+    width: fit-content;
+    margin-left: 7em;
 }
 
 h3{
-    margin-right: 7em;
+    margin-right: 3em;
     text-decoration: none;
 }
 
@@ -19,6 +21,6 @@ h3{
 }
 
 .navbar{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }

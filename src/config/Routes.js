@@ -18,6 +18,7 @@ import NewPost from '../pages/Posts/NewPost'
 import { useRecoilValue } from "recoil";
 import { loggedInState } from "../recoil/selectors";
 import EditPost from '../pages/Posts/EditPost'
+import DeletePost from '../pages/Posts/DeletePost'
 
 const Routes = function (props) {
   const loggedIn = useRecoilValue(loggedInState);
@@ -34,6 +35,7 @@ const Routes = function (props) {
     <Route exact path='/posts/new' component={NewPost} />
     <Route exact path='/posts/:id' component={PostShow} />
     <Route exact path='/posts/:id/edit' component={EditPost} />
+    <Route exact path='/posts/:id/delete' component={DeletePost} />
     <Route exact path='/profile' component={ Profile } />
     <Route exact path='/contact' component={ Contact } />
     <Route exact path='/signup' component={ Signup } />

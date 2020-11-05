@@ -2,8 +2,8 @@ import React from 'react';
 import Header from '../../components/Header/Header'
 import Navbar from '../../components/Navbar/Navbar'
 import Userbar from '../../components/Navbar/Userbar'
-import Slideshow from '../../components/Slideshow/Slideshow'
 import Footer from '../../components/Footer/Footer'
+import Slideshow from '../../components/Slideshow/Slideshow'
 import './Home.css'
 import AuthModel from '../../models/AuthModel'
 

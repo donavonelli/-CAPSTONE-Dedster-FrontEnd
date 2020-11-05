@@ -29,6 +29,16 @@ class PostModel {
         })
         .then(response => response.json());
     }
+
+    static destroy = (postId) => {
+        return fetch(`${URL}/${postId}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        })
+        .then(response => response.json());
+    }
 }
 
 

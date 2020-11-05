@@ -10,6 +10,7 @@ class Contact extends Component {
         return (
             <div>
                 <Header /> 
+                <Userbar />
                 <Navbar />
                 <h3>Contact Page</h3>
                 <p>Email: official.dedster@gmail.com</p>

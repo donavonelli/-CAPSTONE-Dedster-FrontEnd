@@ -1,7 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/Header/Header'
 import Navbar from '../../components/Navbar/Navbar'
-import Userbar from '../../components/Navbar/Userbar'
 import Footer from '../../components/Footer/Footer'
 
 

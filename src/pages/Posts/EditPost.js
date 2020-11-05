@@ -1,5 +1,9 @@
 import React from 'react';
 import PostModel from '../../models/PostModel';
+import Header from '../../components/Header/Header'
+import Navbar from '../../components/Navbar/Navbar'
+import Userbar from '../../components/Navbar/Userbar'
+import Footer from '../../components/Footer/Footer'
 
 class EditPost extends React.Component {
     state = {
@@ -49,6 +53,9 @@ class EditPost extends React.Component {
     render() {
         return (
             <div>
+                <Header />
+                <Userbar />
+                <Navbar />
                 <h2>Edit {this.state.formTitle}</h2>
                 <form onSubmit={this.handleSubmit}>
                     <div className='form-input'>
@@ -89,6 +96,7 @@ class EditPost extends React.Component {
                     </div>
                     <input type='submit' value='Update Post' />
                 </form>
+                <Footer />
             </div>
         )
     }

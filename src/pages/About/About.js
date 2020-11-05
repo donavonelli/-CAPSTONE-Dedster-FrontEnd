@@ -9,6 +9,7 @@ class About extends Component {
         return (
             <div>
                 <Header /> 
+                <Userbar />
                 <Navbar />
                 <h3>About Dedster</h3>
                 <p>Dedster was created in hopes of creating a college community online aswell as oncampus. Team Dedster felt there was many people on or around campus with skills that could benefit others so we created this website give the talented a place to showcase their talents and let others know their skills are for sale!</p>

@@ -1,0 +1,10 @@
+.post-card{
+    background-color: #F58023;
+    display: inline-block;
+    margin-right: 3em;
+    margin-bottom: 5em;
+    border-radius: 25px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+}

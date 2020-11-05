@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../../components/Header/Header'
 import Navbar from '../../components/Navbar/Navbar'
 import Userbar from '../../components/Navbar/Userbar'
@@ -15,8 +15,7 @@ function CollegesPage(props) {
                 <Header /> 
                 <Userbar />
                 <Navbar />
-                <h3>Colleges Page</h3>
-                <h4>All Colleges</h4>
+                <h4>Colleges</h4>
       {colleges.length ? <Colleges data={colleges} /> : <h1>Loading Colleges</h1>}
                 <Footer />
             </div>
